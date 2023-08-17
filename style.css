@@ -1,0 +1,49 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* CSS FOR NAV BAR */
+.nav {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS FOR NAV IMAGE */
+#logo_image {
+    width: 180px;
+}
+
+/* CSS FOR LINKS */
+#links {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: 10px;
+}
+
+.nav>ul>li {
+    list-style: none;
+}
+
+#links:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: ease-out 1s;
+    transform: rotate(360deg);
+}
