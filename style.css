@@ -103,7 +103,7 @@ body {
     padding: 17px;
     width: 555px;
     height: 300px;
-    
+
 }
 
 #left_image>img:hover {
@@ -168,3 +168,80 @@ body {
 
 /* ------------------------------------MEDIA QUESRYY / RESPONSIVE ------------------------------------ */
 
+@media only screen and (max-width: 600px) {
+    /* body {
+        background-color: brown;
+    } */
+
+    /* ------------CSS FOR NAV---- */
+    .nav {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* -------------CSS FOR LOGO IMAGE------- */
+    #logo>img {
+        width: 100px;
+        height: 50px;
+    }
+
+
+    #nav>ul{
+        padding: 0px;
+        margin: 0px;
+        gap:0px;
+    }
+
+    #nav>ul>li{
+        padding: 0px;
+    }
+
+    #nav>ul>li>a:hover{
+        text-decoration: underline;
+    }
+
+    /* _-------------CSS FOR BODY PART-------- */
+    .body_part {
+        background-color:lightcyan;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    #about{
+        width: 100vw;
+    }
+    #about>p{
+        font-size: 12px;
+        padding: 10px;
+    }
+    #left_image {
+        display: none;
+    }
+
+    /* ------------CSS FOR GALLERY----------- */
+    .gallery{
+        /* background-color: darkgoldenrod; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #inner_gallery{
+        /* background-color: aqua; */
+        gap: 0px;
+        width: 150px;
+    }
+
+    #inner_gallery>img{
+        width: 150px;
+        height: 150px;
+    }
+}
