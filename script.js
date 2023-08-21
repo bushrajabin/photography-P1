@@ -1,5 +1,5 @@
 //-------------------------------------------------------------THIS IS FOR NAV LINKS-----------------
-const Nav_links = ["Home", "About", "Contact", "Blogs", "Gallery"];
+const Nav_links = ["Home", "About", "Blogs", "Gallery"];
 
 //---------------dummy datas for image-------------------------
 
@@ -9,6 +9,7 @@ const dummy_Data = [
         "type": "flower",
         "Available": true,
         "Image": './images/whiteFlower.jpeg'
+
     },
     {
         "id": 2,
@@ -39,61 +40,7 @@ const dummy_Data = [
         "type": "SunSet",
         "Available": true,
         "Image": './images/sunSet.jpg'
-    },
-    {
-        "id": 7,
-        "type": "sun",
-        "Available": false,
-        "Image": './images/img1.jpeg'
-    },
-    {
-        "id": 8,
-        "type": "Temple",
-        "Available": false,
-        "Image": './images/img1.jpeg'
-    },
-    {
-        "id": 9,
-        "type": "clouds",
-        "Available": false,
-        "Image": './images/sky.jpg'
-    },
-    {
-        "id": 10,
-        "type": "sky",
-        "Available": true,
-        "Image": './images/sky2.jpg'
-    },
-    {
-        "id": 11,
-        "type": "redFlower",
-        "Available": false,
-        "Image": './images/redFlower.jpg'
-    },
-    {
-        "id": 12,
-        "type": "flower",
-        "Available": true,
-        "Image": './images/redFlower2.jpg'
-    },
-    {
-        "id": 13,
-        "type": "keybord",
-        "Available": false,
-        "Image": './images/kebord.jpg'
-    },
-    {
-        "id": 14,
-        "type": "LeafWithSun",
-        "Available": true,
-        "Image": './images/leaf1.jpg'
-    },
-    {
-        "id": 15,
-        "type": "eveningVibe",
-        "Available": false,
-        "Image": './images/eveningSky.jpg'
-    },
+    }
 ]
 
 // ---------------------------Main function start from here----------------------
@@ -103,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nav_logo = document.createElement("div");
     nav_logo.id = "logo";
     nav_logo.innerHTML = `
-    <img id="logo_image" src="./images/logo.png"/>
+    <img id="logo_image" src="./images/TP Logo.png"/>
     `;
     main_div.appendChild(nav_logo);
 
@@ -152,23 +99,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ----------------------------THIS IS FOR IMAGES PART/DUMMY DATA-----
 
+
     const gallery_Div = document.getElementById("gallery");
     //-----FOR DUMMMYYY DATA
 
     for (let element of dummy_Data) {
-        console.log("elem", element)
+        // console.log("elem", element)
         // console.log(`key is ${keys} and values are ${element[keys]}`)
-
         const only_Image = element['Image']
         const only_Available = element['Available']
-        const type = element['type']
+        const only_Type = element['type']
+
 
         const inner_gallery = document.createElement("div");
         inner_gallery.id = 'inner_gallery'
 
-
-
         gallery_Div.appendChild(inner_gallery)
+
         const main_img = document.createElement('img');
         main_img.id = 'main_img'
 
@@ -177,22 +124,39 @@ document.addEventListener("DOMContentLoaded", function () {
         add_Now.innerHTML = `${only_Available ? "Available" : "Not Available"}`
         add_Now.addEventListener("click", function (event) {
             event.preventDefault();
-            alert(only_Available);
-            if (only_Available == true) {
-                alert("Added Succesfully")
+            if (only_Available) {
+                alert(only_Available)
+
             } else {
-                alert("Not Available")
+                alert(only_Available)
             }
         })
 
         inner_gallery.appendChild(main_img)
         inner_gallery.appendChild(add_Now)
+
+
         main_img.src = only_Image;
         gallery_Div.appendChild(inner_gallery);
+
     }
+
+
+
+
+    // ------------------THIS IS FOR FOOTER PART-----------------
+
+    const footer = document.getElementById("footerpart");
+    const footer_part = document.createElement(div);
+    footer_part.id = "footer";
+    footer_part.innerHTML = `
+     <p>DesignBy:-- @bushra`;
+    body.appendChild(footer_part);
 
 });
 
 
-
-
+// this function move in second pagee
+function clickForNextPage(url) {
+    window.location.href = url
+}
