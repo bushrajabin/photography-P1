@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The photograph</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="icon" href="./images/favIcon.jpg">
+</head>
+
+<body>
+
+    <div class="gallery2" id="gallery2"></div>
+    <script>
+
+        // This is for 2nd page 
+
+        const dummy_Data = [
+            {
+                "id": 7,
+                "type": "sun",
+                "Available": false,
+                "Image": './images/img1.jpeg'
+            },
+            {
+                "id": 8,
+                "type": "Temple",
+                "Available": false,
+                "Image": './images/img1.jpeg'
+            },
+            {
+                "id": 9,
+                "type": "clouds",
+                "Available": false,
+                "Image": './images/sky.jpg'
+            },
+            {
+                "id": 10,
+                "type": "sky",
+                "Available": true,
+                "Image": './images/sky2.jpg'
+            },
+            {
+                "id": 11,
+                "type": "redFlower",
+                "Available": false,
+                "Image": './images/redFlower.jpg'
+            },
+            {
+                "id": 12,
+                "type": "flower",
+                "Available": true,
+                "Image": './images/redFlower2.jpg'
+            },
+            {
+                "id": 14,
+                "type": "LeafWithSun",
+                "Available": true,
+                "Image": './images/leaf1.jpg'
+            },
+            {
+                "id": 15,
+                "type": "hangingResturant",
+                "Available": false,
+                "Image": './images/leaf1.jpg'
+
+            },
+            {
+                "id": 16,
+                "type": "eveningVibe",
+                "Available": false,
+                "Image": './images/eveningSky.jpg'
+            },
+            {
+                "id": 17,
+                "type": "camera",
+                "Available": false,
+                "Image": './images/camera-1.jpg'
+            },
+            {
+                "id": 18,
+                "type": "BBG",
+                "Available": false,
+                "Image": './images/bbg2.jpg'
+            },
+            {
+                "id": 19,
+                "type": "eveningVibe",
+                "Available": false,
+                "Image": './images/eveningSky.jpg'
+            },
+            {
+                "id": 20,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/rose.jpg'
+            },
+            {
+                "id": 21,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img3.jpg'
+            },
+            {
+                "id": 22,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/bbg2.jpg'
+            },
+            {
+                "id": 23,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img5.jpg'
+            },
+            {
+                "id": 24,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img6.jpg'
+            },
+            {
+                "id": 25,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img7.jpg'
+            },
+            {
+                "id": 26,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img8.jpg'
+            },
+            {
+                "id": 27,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img9.jpg'
+            },
+            {
+                "id": 28,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img10.jpg'
+            },
+            {
+                "id": 29,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img11.jpg'
+            },
+            {
+                "id": 30,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img12.jpg'
+            },
+            {
+                "id": 31,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/img13.jpg'
+            },
+            {
+                "id": 20,
+                "type": "Rose",
+                "Available": false,
+                "Image": './images/rose.jpg'
+            },
+
+        ]
+
+        window.addEventListener("DOMContentLoaded", function () {
+
+            const gallery_Div2 = document.getElementById("gallery2");
+            for (let element of dummy_Data) {
+
+                const only_Image = element['Image']
+                const only_Available = element['Available']
+
+
+
+                const inner_gallery2 = document.createElement("div");
+                inner_gallery2.id = 'inner_gallery'
+
+                gallery_Div2.appendChild(inner_gallery2);
+
+                const main_img = document.createElement('img');
+                main_img.id = 'main_img'
+
+                const add_Now = document.createElement("button")
+                add_Now.className = 'add_btn'
+                add_Now.innerHTML = `${only_Available ? "Available" : "Not Available"}`
+                add_Now.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    if (only_Available) {
+                        alert(only_Available)
+
+                    } else {
+                        alert(only_Available)
+                    }
+                })
+
+                inner_gallery2.appendChild(main_img)
+                inner_gallery2.appendChild(add_Now)
+
+
+                main_img.src = only_Image;
+                gallery_Div2.appendChild(inner_gallery2);
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
