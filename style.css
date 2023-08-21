@@ -279,11 +279,11 @@ button:hover{
 
     #inner_gallery {
         gap: 0px;
-        width: 150px;
+        width: 100px;
     }
 
     #inner_gallery>img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 }
