@@ -279,7 +279,7 @@ button:hover{
 
     #inner_gallery {
         gap: 0px;
-        width: 130px;
+        width: 37%;
     }
 
     #inner_gallery>img {
