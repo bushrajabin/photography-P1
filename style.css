@@ -207,7 +207,9 @@ button:hover{
 
 /* ------------------------------------MEDIA QUESRYY / RESPONSIVE ------------------------------------ */
 
-@media only screen and (max-width: 1500px) {
+/* ---------THIS MEDIA QUERY FOR 280 PX------------ */
+
+@media only screen and (max-width: 450px) {
     /* body {
         background-color: brown;
     } */
@@ -273,13 +275,13 @@ button:hover{
         flex-direction: row;
         flex-wrap: wrap;
         width: 100vw;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
 
     #inner_gallery {
         gap: 0px;
-        width: 37%;
+        width: 36%;
     }
 
     #inner_gallery>img {
@@ -292,7 +294,10 @@ button:hover{
 
 /* FPR OTHER DEVIce */
 
-@media only screen and (max-width: 400px) {
+ 
+
+
+@media only screen and (max-width: 2000px) {
     /* body {
         background-color: brown;
     } */
@@ -358,13 +363,13 @@ button:hover{
         flex-direction: row;
         flex-wrap: wrap;
         width: 100vw;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
 
     #inner_gallery {
         gap: 0px;
-        width: 37%;
+        width: 36%;
     }
 
     #inner_gallery>img {
