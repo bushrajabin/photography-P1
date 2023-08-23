@@ -161,9 +161,9 @@ document.addEventListener("DOMContentLoaded", function () {
     links.id="social_links";
     links.innerHTML=`
     <h1>Follow us </h1>
-    <img src="./images/facebook.png" id="img1"/>
-    <img src="./images/instagram.png" id="img2"/>
-    <img src="./images/printeres.png" id="img3"/>
+      <a href="https://in.pinterest.com/bushrabintjabin/"><img src="./images/facebook.png" id="img1"/></a>
+     <a href="https://in.pinterest.com/bushrabintjabin/"><img src="./images/instagram.png" id="img2"/></a>
+     <a href="https://in.pinterest.com/bushrabintjabin/"><img src="./images/printeres.png" id="img3"/></a>
     <h3>DesignBy:-@Bushra jabin||WebDeveloper||Student</h3>
     `;
    
