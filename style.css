@@ -197,22 +197,61 @@ body {
     margin: 10px;
 }
 
-#next_image:hover{
+#next_image:hover {
     background-color: var(--primary);
-    color:var(--third);
-    
+    color: var(--third);
+
 }
 
 
 /* CSS FOR FOOTER------------ */
 
-#footer{
+#footer {
     background-color: var(--primary);
     padding: 10px;
-  text-align: center;
-  color: var(--third);
+    text-align: center;
+    color: var(--third);
+    font-family: cursive;
+    letter-spacing: 2px;
 }
 
+
+/* FOR SOCIAL LINKS---------- */
+#social_links {
+    background-color: var(--primary);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+#img1 {
+    width: 30px;
+   
+    padding: 4px;
+}
+
+#img2 {
+    width: 70px;
+}
+
+#img3 {
+    width: 40px;
+    
+}
+
+#social_links>h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+#social_links>h1{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
 /* ------------------------------------MEDIA QUESRYY / RESPONSIVE ------------------------------------ */
 
 /* ---------THIS MEDIA QUERY FOR 280 PX------------ */
