@@ -141,28 +141,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // FOR SHOW MORE BUTTON----------
-    const showMore=document.getElementById("next");
-    const next_image=document.createElement("button");
-    next_image.id="next_image";
-    next_image.innerHTML=`
+    const showMore = document.getElementById("next");
+    const next_image = document.createElement("button");
+    next_image.id = "next_image";
+    next_image.innerHTML = `
     <p>ShowMore<p>`;
     showMore.appendChild(next_image)
 
-
-
-
     // ------------------THIS IS FOR FOOTER PART-----------------
 
-    const footer = document.getElementById("footerpart");
-    const footer_part = document.createElement("div");
-    footer_part.id = "footer";
-    footer_part.innerHTML = `
-     <p> The|Photograph</p>`;
-    footer.appendChild(footer_part);
+    // const footer = document.getElementById("footerpart");
+    // const footer_part = document.createElement("div");
+    // footer_part.id = "footer";
+    // footer_part.innerHTML = `
+    //  <p> The|Photograph</p>`;
+    // footer.appendChild(footer_part);
 
     // const links=document.createElement("div");
     // links.id="social_links";
-    
+
 
 });
 
