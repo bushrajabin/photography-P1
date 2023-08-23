@@ -138,8 +138,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         main_img.src = only_Image;
         gallery_Div.appendChild(inner_gallery);
-
     }
+
+    // FOR SHOW MORE BUTTON----------
+    const showMore=document.getElementById("next");
+    const next_image=document.createElement("button");
+    next_image.id="next_image";
+    next_image.innerHTML=`
+    <p>ShowMore<p>`;
+    showMore.appendChild(next_image)
 
 
 
@@ -147,11 +154,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // ------------------THIS IS FOR FOOTER PART-----------------
 
     const footer = document.getElementById("footerpart");
-    const footer_part = document.createElement(div);
+    const footer_part = document.createElement("div");
     footer_part.id = "footer";
     footer_part.innerHTML = `
-     <p>DesignBy:-- @bushra`;
-    body.appendChild(footer_part);
+     <p> The|Photograph</p>`;
+    footer.appendChild(footer_part);
+
+    // const links=document.createElement("div");
+    // links.id="social_links";
+    
 
 });
 
