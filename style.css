@@ -180,31 +180,38 @@ body {
 }
 
 /* ----------------CSS FOR NEXT BUTTON----------- */
-#next {
-    /* background-color:var(--primary); */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-#next>button {
-    padding: 10px;
-    font-size: 18px;
+#next_image {
     background-color: var(--third);
+    align-items: center;
+    font-size: 17px;
+    margin: auto;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
+    letter-spacing: 2px;
+
 }
 
-button:hover {
+#next {
+    text-align: center;
+    margin: 10px;
+}
+
+#next_image:hover{
     background-color: var(--primary);
-    color: white;
+    color:var(--third);
+    
 }
 
+
+/* CSS FOR FOOTER------------ */
+
+#footer{
+    background-color: var(--primary);
+    padding: 10px;
+  text-align: center;
+  color: var(--third);
+}
 
 /* ------------------------------------MEDIA QUESRYY / RESPONSIVE ------------------------------------ */
 
@@ -295,6 +302,3 @@ button:hover {
 
 
 /* FPR OTHER DEVIce */
-
-
-
