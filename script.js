@@ -150,15 +150,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ------------------THIS IS FOR FOOTER PART-----------------
 
-    // const footer = document.getElementById("footerpart");
-    // const footer_part = document.createElement("div");
-    // footer_part.id = "footer";
-    // footer_part.innerHTML = `
-    //  <p> The|Photograph</p>`;
-    // footer.appendChild(footer_part);
+    const footer = document.getElementById("footerpart");
+    const footer_part = document.createElement("div");
+    footer_part.id = "footer";
+    footer_part.innerHTML = `
+     <h2> The|Photograph</h2>`;
+    footer.appendChild(footer_part);
 
-    // const links=document.createElement("div");
-    // links.id="social_links";
+    const links=document.createElement("div");
+    links.id="social_links";
+    links.innerHTML=`
+    <h1>Follow us </h1>
+    <img src="./images/facebook.png" id="img1"/>
+    <img src="./images/instagram.png" id="img2"/>
+    <img src="./images/printeres.png" id="img3"/>
+    <h3>DesignBy:-@Bushra jabin||WebDeveloper||Student</h3>
+    `;
+   
+    footer.appendChild(links)
 
 
 });
