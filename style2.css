@@ -67,7 +67,7 @@ body {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
     .gallery2 {
 
         display: flex;
@@ -82,12 +82,37 @@ body {
 
     #inner_gallery {
         gap: 0px;
-        width: 100px;
+        width: 39%;
         padding: 7px;
     }
 
     #inner_gallery>img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .gallery2 {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    #inner_gallery {
+        gap: 0px;
+        width: 38%;
+        padding: 7px;
+    }
+
+    #inner_gallery>img {
+        width: 160px;
+        height: 160px;
     }
 }
