@@ -182,13 +182,16 @@ body {
 /* ----------------CSS FOR NEXT BUTTON----------- */
 #next_image {
     background-color: var(--third);
-    align-items: center;
+    /* align-items: center; */
     font-size: 17px;
+    width: 130px;
     margin: auto;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
     letter-spacing: 2px;
+    padding: 0px;
+    
 
 }
 
