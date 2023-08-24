@@ -1,5 +1,5 @@
 //-------------------------------------------------------------THIS IS FOR NAV LINKS-----------------
-const Nav_links = ["Home", "About", "Blogs", "Gallery"];
+const Nav_links = ["Home", "About", "Gallery", "Contact"];
 
 //---------------dummy datas for image-------------------------
 
@@ -125,10 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
         add_Now.addEventListener("click", function (event) {
             event.preventDefault();
             if (only_Available) {
-                alert(only_Available)
+                alert("only_Available")
 
             } else {
-                alert(only_Available)
+                alert("only_Available")
             }
         })
 
