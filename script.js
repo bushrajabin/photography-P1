@@ -43,6 +43,12 @@ const dummy_Data = [
     }
 ]
 
+// smooth scrool to view
+
+function scroolToView (div_Id){
+    const getDivId= document.getElementById(div_Id)
+    getDivId.scrollIntoView({behavior:'smooth'})
+}
 // ---------------------------Main function start from here----------------------
 document.addEventListener("DOMContentLoaded", function () {
     // -----------THIS FUNCTION FOR NAV BAR
@@ -72,11 +78,47 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < aTags.length; i++) {
         aTags[i].addEventListener("click", function (event) {
             event.preventDefault();
-            alert("Clicked: " + aTags[i].innerText);
+
+            // const href = this.getAttribute("href");
+            Nav_links.textContent = Nav_links[i];
+
+            switch (Nav_links[i]) {
+                case "Home":                  
+                    scroolToView("nav")
+                    break;
+                case "About":
+                    scroolToView("body_part")
+
+                    break;
+                case "Gallery":
+                    scroolToView("gallery")
+
+                    break;
+                case "Contact":
+                    scroolToView("footerpart")
+
+                default:
+                    break;
+            }
+            // if (aTags[i].innerText==='Contact'){
+            //     alert('ye contact haiiiiiiii')
+
+            // }
+
+
         });
     }
 
-    // -------------------------------------------------THIS IS FOR BODY_PART
+
+
+
+
+
+
+
+
+
+    // -------------------------------------------------THIS IS FOR BODY_PART---------------------------------------------
 
     const body = document.getElementById("body_part");
     const inner_Div = document.createElement("div");
@@ -97,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     body.appendChild(image)
 
-    // ----------------------------THIS IS FOR IMAGES PART/DUMMY DATA-----
+    // ----------------------------THIS IS FOR IMAGES PART/DUMMY DATA---------------------------
 
 
     const gallery_Div = document.getElementById("gallery");
@@ -157,16 +199,16 @@ document.addEventListener("DOMContentLoaded", function () {
      <h2> The|Photograph</h2>`;
     footer.appendChild(footer_part);
 
-    const links=document.createElement("div");
-    links.id="social_links";
-    links.innerHTML=`
+    const links = document.createElement("div");
+    links.id = "social_links";
+    links.innerHTML = `
     <h1>Follow us </h1>
       <a href="https://in.pinterest.com/bushrabintjabin/"><img src="./images/facebook.png" id="img1"/></a>
      <a href="https://in.pinterest.com/bushrabintjabin/"><img src="./images/instagram.png" id="img2"/></a>
      <a href="https://in.pinterest.com/bushrabintjabin/"><img src="./images/printeres.png" id="img3"/></a>
     <h3>DesignBy:-@Bushra jabin||WebDeveloper||Student</h3>
     `;
-   
+
     footer.appendChild(links)
 
 
