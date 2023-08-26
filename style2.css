@@ -66,6 +66,22 @@ body {
 }
 
 
+#headerText{
+    background-color:var(--primary);
+    margin: 0px;
+    padding: 2px;
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#headerText>p{
+ align-items: center;
+ text-align: center;
+ color: white;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ letter-spacing: 2px;
+}
 
 @media only screen and (max-width: 1500px) {
     .gallery2 {
