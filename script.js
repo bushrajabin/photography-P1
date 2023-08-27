@@ -162,17 +162,19 @@ document.addEventListener("DOMContentLoaded", function () {
         main_img.id = 'main_img'
 
         const add_Now = document.createElement("button")
-        add_Now.className = 'add_btn'
-        add_Now.innerHTML = `${only_Available ? "Available" : "Not Available"}`
-        add_Now.addEventListener("click", function (event) {
-            event.preventDefault();
-            if (only_Available) {
-                alert("only_Available")
+        add_Now.className = 'add_btn';
+        add_Now.innerHTML=`
+        <p>ViewMore</p>`;
+        // add_Now.innerHTML = `${only_Available ? "Available" : "Not Available"}`
+        // add_Now.addEventListener("click", function (event) {
+        //     event.preventDefault();
+        //     if (only_Available) {
+        //         alert("only_Available")
 
-            } else {
-                alert("only_Available")
-            }
-        })
+        //     } else {
+        //         alert("only_Available")
+        //     }
+        // })
 
         inner_gallery.appendChild(main_img)
         inner_gallery.appendChild(add_Now)
