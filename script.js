@@ -45,9 +45,9 @@ const dummy_Data = [
 
 // smooth scrool to view
 
-function scroolToView (div_Id){
-    const getDivId= document.getElementById(div_Id)
-    getDivId.scrollIntoView({behavior:'smooth'})
+function scroolToView(div_Id) {
+    const getDivId = document.getElementById(div_Id)
+    getDivId.scrollIntoView({ behavior: 'smooth' })
 }
 // ---------------------------Main function start from here----------------------
 document.addEventListener("DOMContentLoaded", function () {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Nav_links.textContent = Nav_links[i];
 
             switch (Nav_links[i]) {
-                case "Home":                  
+                case "Home":
                     scroolToView("nav")
                     break;
                 case "About":
@@ -104,19 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
             //     alert('ye contact haiiiiiiii')
 
             // }
-
-
         });
     }
-
-
-
-
-
-
-
-
-
 
     // -------------------------------------------------THIS IS FOR BODY_PART---------------------------------------------
 
@@ -130,15 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </p>
     `;
     body.appendChild(inner_Div);
-
-    const image_div = document.getElementById("body_part");
-    const image = document.createElement("div");
-    image.id = "left_image";
-    image.innerHTML = `
-    <img id="img1" src="./images/camera-1.jpg"/>
-    `;
-    body.appendChild(image)
-
     // ----------------------------THIS IS FOR IMAGES PART/DUMMY DATA---------------------------
 
 
@@ -163,19 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const add_Now = document.createElement("button")
         add_Now.className = 'add_btn';
-        add_Now.innerHTML=`
+        add_Now.innerHTML = `
         <p>ViewMore</p>`;
-        // add_Now.innerHTML = `${only_Available ? "Available" : "Not Available"}`
-        // add_Now.addEventListener("click", function (event) {
-        //     event.preventDefault();
-        //     if (only_Available) {
-        //         alert("only_Available")
-
-        //     } else {
-        //         alert("only_Available")
-        //     }
-        // })
-
         inner_gallery.appendChild(main_img)
         inner_gallery.appendChild(add_Now)
 

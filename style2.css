@@ -22,29 +22,48 @@ body {
 
 
 #inner_gallery {
-   background-color: var(--secoundry);
+    background-color: var(--secoundry);
+    width: 280px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 4px;
+    justify-content: center;
     margin: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 10px;
 }
 
+/* -----------------------------------FOR IMAGE TYPE------------------- */
+.type {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    padding: 8px;
+    margin: 0px;
+
+}
+
+.caption {
+    text-align: center;
+    font-size: 13px;
+    padding: 6px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* -----------------CSS FOR BUTTTONN------------------- */
 #inner_gallery>.add_btn {
-    width: 100px;
-    height: 40px;
+    width: 200px;
     border: none;
-    font-size: 14px;
+    font-size: 19px;
+    letter-spacing: 2px;
     color: rgb(3, 0, 0);
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     cursor: pointer;
     border-radius: 10px;
     margin: 10px;
+
 }
 
 #inner_gallery>.add_btn:hover {
@@ -54,20 +73,20 @@ body {
 }
 
 #inner_gallery>img {
-    width: 160px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 #main_img {
-   
+
     margin: 10px;
 }
 
 
-#headerText{
-    background-color:var(--primary);
+#headerText {
+    background-color: var(--primary);
     margin: 0px;
     padding: 2px;
     position: sticky;
@@ -75,50 +94,61 @@ body {
     width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#headerText>p{
- align-items: center;
- text-align: center;
- color: white;
- font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- letter-spacing: 2px;
+
+#headerText>p {
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 300px) {
     .gallery2 {
-
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: row-reverse;
         width: 100vw;
-        justify-content: space-around;
-        align-items: center;
-
-
+        padding: 0px;
     }
 
     #inner_gallery {
-        gap: 0px;
-        width: 39%;
-        padding: 7px;
+        overflow: hidden;
+        font-size: 15px;
+        text-align: center;
+        width: 160px;
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
     }
 
     #inner_gallery>img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .type {
+        font-size: 13px;
+        letter-spacing: 0px;
+        padding: 3px;
+
+    }
+
+    .caption {
+        font-size: 10px;
+        letter-spacing: 1px;
     }
 }
 
-@media only screen and (max-width: 250px) {
+@media (min-width: 300px) and (max-width:500) {
     .gallery2 {
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100vw;
         justify-content: space-around;
         align-items: center;
-
-
     }
 
     #inner_gallery {
@@ -130,5 +160,45 @@ body {
     #inner_gallery>img {
         width: 160px;
         height: 160px;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px) {
+    .gallery2 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+    }
+
+    #inner_gallery {
+        width: 200px;
+        text-align: center;
+    }
+
+    #inner_gallery>img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+
+/* Min-width */
+@media (min-width:800px) {
+    .gallery2 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+    }
+
+    #inner_gallery {
+        width: 250px;
+        text-align: center;
+    }
+
+    #inner_gallery>img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 }
