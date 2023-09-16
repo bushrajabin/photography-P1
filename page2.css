@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -10,6 +11,51 @@ body {
     --footer: #FFF6E0;
 }
 
+/* for nav bar */
+.nav {
+    background-color: var(--primary);
+    color: var(--footer);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    margin: auto;
+    z-index: 100;
+}
+
+
+/* -----------------------------------------CSS FOR LINKS-------------------------------------------- */
+#links {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.nav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.nav>ul>li {
+    list-style: none;
+}
+
+#links:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: ease-out 1s;
+    transform: rotate(360deg);
+}
+/* for gallery */
 .gallery2 {
     display: flex;
     flex-direction: row;
@@ -84,7 +130,6 @@ body {
     margin: 10px;
 }
 
-
 #headerText {
     background-color: var(--primary);
     margin: 0px;
@@ -93,6 +138,7 @@ body {
     top: 0px;
     width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position:static;
 }
 
 #headerText>p {
