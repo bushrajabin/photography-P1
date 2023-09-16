@@ -40,7 +40,3 @@
 
 // For rating
 
-
-
-var x=10;
-console.log(x,y,z)
