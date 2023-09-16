@@ -1,3 +1,5 @@
+const Nav_link = ["Home", "About", "Gallery", "Contact"];
+
 // This is for page 2
 const dummy_Data = [
   {
@@ -290,8 +292,12 @@ const dummy_Data = [
   },
 ];
 
+function scroolToViewSmooth(div_Id) {
+  const getDivId = document.getElementById(div_Id);
+  getDivId.scrollIntoView({ behavior: "smooth" });
+}
 // nav links
-const Nav_links = ["Home", "About", "Gallery", "Contact"];
+
 window.addEventListener("DOMContentLoaded", function () {
   generateNav();
   forDummyImage();
@@ -310,10 +316,10 @@ function generateNav() {
   const outer_div = document.getElementById("nav");
   const inner_div = document.createElement("ul");
 
-  for (let i = 0; i < Nav_links.length; i++) {
+  for (let i = 0; i < Nav_link.length; i++) {
     inner_div.innerHTML += `
           <li>
-          <a id="links">${Nav_links[i]}</a>
+          <a id="links">${Nav_link[i]}</a>
           </li>`;
   }
 
@@ -326,22 +332,22 @@ function generateNav() {
       event.preventDefault();
 
       // const href = this.getAttribute("href");
-      Nav_links.textContent = Nav_links[i];
+      Nav_link.textContent = Nav_link[i];
 
-      switch (Nav_links[i]) {
+      switch (Nav_link[i]) {
         case "Home":
-          scroolToView("nav");
+          scroolToViewSmooth("nav");
           break;
         case "About":
-          scroolToView("body_part");
+          scroolToViewSmooth("body_part");
 
           break;
         case "Gallery":
-          scroolToView("gallery");
+          scroolToViewSmooth("gallery2");
 
           break;
         case "Contact":
-          scroolToView("footerpart");
+          scroolToViewSmooth("footerpart");
 
         default:
           break;
@@ -395,3 +401,6 @@ function forDummyImage() {
     gallery_Div2.appendChild(inner_gallery2);
   }
 }
+
+
+// SCROLL TO VIEW
