@@ -158,6 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //   window.location.href = url;
 // }
 
-// // const windowPathName = window.location.pathname;
-// const nav_links = document.getElementsByTagName("");
-// console.log(nav_links);
+
+// ashdyuywerttwyety
+
