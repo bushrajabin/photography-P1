@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Photograph</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./images/favIcon.jpg" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> The Photograph</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/favIcon.jpg">
-</head>
-
-<body>
+  <body>
     <nav id="nav" class="nav"></nav>
     <div class="body_part" id="body_part"></div>
     <div class="gallery" id="gallery"></div>
-    <div onclick="clickForNextPage('page2.html')" id="next"></div>
+    <div onclick="clickForNextPage()" id="next"></div>
     <div class="footerpart" id="footerpart"></div>
-    <script src="./homePage.js"></script>
 
-</body>
-
+    <script type="module" src="HomePage.js"></script>
+    <script type="module" src="./data.js"></script>
+  </body>
 </html>

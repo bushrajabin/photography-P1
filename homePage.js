@@ -1,44 +1,7 @@
+import { dummy_Data } from "./data.js";
 //-------------------------------------------------------------THIS IS FOR NAV LINKS-----------------
 const Nav_links = ["Home", "About", "Gallery", "Contact"];
 //---------------dummy datas for image-------------------------
-const dummy_Data = [
-  {
-    id: 1,
-    type: "flower",
-    Available: true,
-    Image: "./images/whiteFlower.jpeg",
-  },
-  {
-    id: 2,
-    type: "Pinkflower",
-    Available: true,
-    Image: "./images/pinkFlower.jpeg",
-  },
-  {
-    id: 3,
-    type: "SunLeafes",
-    Available: true,
-    Image: "./images/sunWithLeaves.jpeg",
-  },
-  {
-    id: 4,
-    type: "Black&White",
-    Available: false,
-    Image: "./images/blackWhite.jpeg",
-  },
-  {
-    id: 5,
-    type: "Sunset",
-    Available: false,
-    Image: "./images/images.jpeg",
-  },
-  {
-    id: 6,
-    type: "SunSet",
-    Available: true,
-    Image: "./images/sunSet.jpg",
-  },
-];
 
 // smooth scrool to view
 
@@ -124,9 +87,17 @@ function forImageDiv() {
     const only_Image = element["Image"];
     const only_Available = element["Available"];
     const only_Type = element["type"];
+    const only_Id = element["id"];
 
     const inner_gallery = document.createElement("div");
     inner_gallery.id = "inner_gallery";
+
+    // inner_gallery.addEventListener("click", () => alert(only_Id));
+
+    // Add an event listener to open the details page with the clicked ID
+    inner_gallery.addEventListener("click", () => {
+      window.location.href = `details.html?id=${only_Id}`;
+    });
 
     gallery_Div.appendChild(inner_gallery);
 
@@ -182,11 +153,11 @@ document.addEventListener("DOMContentLoaded", function () {
   forFooter();
 });
 
-// this function move in second pagee
-function clickForNextPage(url) {
-  window.location.href = url;
-}
+// // this function move in second pagee
+// function clickForNextPage(url) {
+//   window.location.href = url;
+// }
 
-// const windowPathName = window.location.pathname;
-const nav_links = document.getElementsByTagName("");
-console.log(nav_links);
+// // const windowPathName = window.location.pathname;
+// const nav_links = document.getElementsByTagName("");
+// console.log(nav_links);

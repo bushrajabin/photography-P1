@@ -1,0 +1,126 @@
+export const dummy_Data = [
+  {
+    id: 1,
+    type: "flower",
+    Available: true,
+    Image: "./images/whiteFlower.jpeg",
+    Description: "This is a beautiful white flower.",
+  },
+  {
+    id: 2,
+    type: "Pinkflower",
+    Available: true,
+    Image: "./images/pinkFlower.jpeg",
+    Description: "A lovely pink flower in bloom.",
+  },
+  {
+    id: 3,
+    type: "SunLeafes",
+    Available: true,
+    Image: "./images/sunWithLeaves.jpeg",
+    Description: "Sunlight filtering through green leaves.",
+  },
+  {
+    id: 4,
+    type: "Black&White",
+    Available: false,
+    Image: "./images/blackWhite.jpeg",
+    Description: "A black and white image with artistic contrasts.",
+  },
+  {
+    id: 6,
+    type: "SunSet",
+    Available: true,
+    Image: "./images/sunSet.jpg",
+    Description: "A stunning sunset captured in this image.",
+  },
+  {
+    id: 7,
+    type: "bougainvillea glabra",
+    Available: false,
+    Image: "./images/img14.jpg",
+    Description:
+      "Bougainvillea glabra is an evergreen, climbing shrub with thick, thorny stems and drooping branches that are glabrous or sparsely hairy. The leaf-like bracts are purple, oblong or elliptical, pointed, 65–90 mm (2+1⁄2–3+1⁄2 in) long and about 50 mm (2 in) wide. They tower over the flowers. These grow individually in pairs or in groups of three on flower stems about 3.5 millimeters long.",
+  },
+  {
+    id: 9,
+    type: "Clouds",
+    Available: false,
+    Image: "./images/sky.jpg",
+    Description: "Fluffy white clouds in a blue sky.",
+  },
+  {
+    id: 10,
+    type: "Sky",
+    Available: true,
+    Image: "./images/sky2.jpg",
+    Description: "A clear blue sky on a sunny day.",
+  },
+  {
+    id: 16,
+    type: "Leaf",
+    Available: false,
+    Image: "./images/leaf1.jpg",
+    Description: "A close-up view of green leaves.",
+  },
+  {
+    id: 17,
+    type: "camera",
+    Available: false,
+    Image: "./images/camera-1.jpg",
+    Description: "A professional camera for capturing moments.",
+  },
+  {
+    id: 18,
+    type: "BBg",
+    Available: false,
+    Image: "./images/bbg2.jpg",
+    Description:
+      "Biswa Bangla Gate, popularly known as Kolkata Gate, is the new icon of a rising Bengal, the same way London Eye is for the UK and Eiffel Tower is for Paris.",
+  },
+  {
+    id: 20,
+    type: "Rose",
+    Available: false,
+    Image: "./images/rose.jpg",
+    Description: "A beautiful red rose in full bloom.",
+  },
+  {
+    id: 21,
+    type: "WaterDrops",
+    Available: false,
+    Image: "./images/img3.jpg",
+    Description: "Dewdrops on green leaves in the morning.",
+  },
+  {
+    id: 27,
+    type: "Blue-Sky",
+    Available: false,
+    Image: "./images/img9.jpg",
+    Description: "A vibrant blue sky with a few clouds.",
+  },
+  {
+    id: 31,
+    type: "Canna glauca",
+    Available: false,
+    Image: "./images/img13.jpg",
+    Description:
+      "Canna glauca is a species of the Canna genus, a member of the family Cannaceae. It is commonly known as water canna or Louisiana canna. The species prefers light (sandy), medium (loamy) and heavy (clay) soils and requires well-drained soil. The preferred soil is acid, neutral, and basic (alkaline). It cannot grow in the shade and requires moist soil.",
+  },
+  {
+    id: 38,
+    type: "hoeblackplant",
+    Available: false,
+    Image: "./images/flower1.jpg",
+    Description:
+      "Hibiscus rosa-sinensis, known colloquially as Chinese hibiscus, China rose, Hawaiian hibiscus, rose mallow, and shoeblack plant, is a species of tropical hibiscus, a flowering plant in the Hibisceae tribe of the family Malvaceae.",
+  },
+  {
+    id: 41,
+    type: "Art",
+    Available: true,
+    Image: "./images/mehedi.jpg",
+    Description:
+      "Mehndi, otherwise known as henna, is a paste associated with positive spirits and good luck.",
+  },
+];

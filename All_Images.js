@@ -8,12 +8,6 @@ const dummy_Data = [
     Description:
       "Bougainvillea glabra is an  evergreen, climbing shrub with thick, thorny stems and drooping branches that are glabrous or sparsely hairy.The leaf-like bracts are purple, oblong or elliptical, pointed, 65–90 mm (2+1⁄2–3+1⁄2 in) long and about 50 mm (2 in) wide. They tower over the flowers. These grow individually in pairs or in groups of three on flower stems about 3.5 millimeters long.",
   },
-  // {
-  //     "id": 8,
-  //     "type": "Temple",
-  //     "Available": false,
-  //     "Image": './images/img15.jpg'
-  // },
   {
     id: 9,
     type: "Clouds",
