@@ -1,12 +1,9 @@
 import  {dummy_Data}  from "./data.js";
-
 const Nav_link = ["Home", "About", "Gallery", "Contact"];
-
 function scroolToViewSmooth(div_Id) {
   const getDivId = document.getElementById(div_Id);
   getDivId.scrollIntoView({ behavior: "smooth" });
 }
-
 // THIS FUNCTION IS GENERATE NAV BAR FOR PAGE2-
 function generateNav() {
   const main_div = document.getElementById("nav");
@@ -59,22 +56,16 @@ function generateNav() {
     });
   }
 }
-
 // THIS FUNCTION FOR SHOW IMAGES DATA 
-
 function forImageData(){
   const gallery_Div2 = document.getElementById("gallery2");
-
   for (let element of dummy_Data) {
     const only_Image = element["Image"];
-    const only_Available = element["Available"];
     const only_Type = element["type"];
     const only_Id = element["id"];
 
     const inner_gallery = document.createElement("div");
     inner_gallery.id = "inner_gallery";
-
-    // inner_gallery.addEventListener("click", () => alert(only_Id));
 
     // Add an event listener to open the details page with the clicked ID
     inner_gallery.addEventListener("click", () => {
@@ -97,11 +88,8 @@ function forImageData(){
     gallery_Div2.appendChild(inner_gallery);
   }
 }
-
 // Call all functions in this listener...
 window.addEventListener("DOMContentLoaded", function () {
   generateNav();
   forImageData()
-  // forDummyImage();
-
 });

@@ -101,9 +101,9 @@ body {
 
 /* -----------------CSS FOR BUTTTONN------------------- */
 #inner_gallery>.add_btn {
-    width: 200px;
+    width: 170px;
     border: none;
-    font-size: 19px;
+    font-size: 15px;
     letter-spacing: 2px;
     color: rgb(3, 0, 0);
     background-color: white;
@@ -111,6 +111,7 @@ body {
     cursor: pointer;
     border-radius: 10px;
     margin: 10px;
+    padding: 0px;
 
 }
 
@@ -128,7 +129,6 @@ body {
 }
 
 #main_img {
-
     margin: 10px;
 }
 
@@ -150,6 +150,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 2px;
 }
+
+/* MEDIA QUERY */
 
 @media only screen and (min-width: 300px) {
     .gallery2 {
@@ -189,27 +191,7 @@ body {
     }
 }
 
-@media (min-width: 300px) and (max-width:500) {
-    .gallery2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100vw;
-        justify-content: space-around;
-        align-items: center;
-    }
 
-    #inner_gallery {
-        gap: 0px;
-        width: 38%;
-        padding: 7px;
-    }
-
-    #inner_gallery>img {
-        width: 160px;
-        height: 160px;
-    }
-}
 
 @media (min-width:500px) and (max-width:800px) {
     .gallery2 {

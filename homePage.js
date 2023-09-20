@@ -81,7 +81,7 @@ function forImageDiv() {
   const gallery_Div = document.getElementById("gallery");
   //-----FOR DUMMMYYY DATA
 
-  for (let element of dummy_Data.splice(0,5)) {
+  for (let element of dummy_Data.splice(0, 5)) {
     // console.log("elem", element)
     // console.log(`key is ${keys} and values are ${element[keys]}`)
     const only_Image = element["Image"];
@@ -115,14 +115,15 @@ function forImageDiv() {
     gallery_Div.appendChild(inner_gallery);
   }
 
-  // // FOR SHOW MORE BUTTON----------
-  // const showMore = document.getElementById("next");
-  // const next_image = document.createElement("button");
-  // next_image.id = "next_image";
-  // next_image.innerHTML = `
-  //     <p>ShowMore<p>`;
-  // showMore.appendChild(next_image);
+  // FOR SHOW MORE BUTTON----------
 
+  const showMore = document.getElementById("next");
+  console.log(showMore);
+  const next_image = document.createElement("button");
+  next_image.id = "next_image";
+  next_image.innerHTML = `
+      <p>ShowMore</p>`;
+  showMore.appendChild(next_image);
 }
 
 // FUNCTION FOR FOOTER PART
@@ -152,18 +153,12 @@ document.addEventListener("DOMContentLoaded", function () {
   forbodyPart();
   forImageDiv();
   forFooter();
+  // clickForNextPage();
 });
 
 // // // this function move in second pagee
-// function clickForNextPage() {
-// alert("hi")  
-// // window.location.href = url;
-// }
-
-
-// ashdyuywerttwyety
-
-
-function clickForNextPage(){
-  alert("hiii")
+function clickForNextPage() {
+  // alert("hi")
+  // window.location.href = url;
+  // window.location.href = "http://127.0.0.1:5501/All_Images.html";
 }

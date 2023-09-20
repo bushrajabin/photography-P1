@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <img src="${details.Image}" alt="${details.type}" width="300">
     </div>
     <div class="right_text">
-            <h2> Name of The prooduct:-${details.type}</h2>
-            <h3>Available:- ${details.Available ? "Yes" : "No"}</h3>
+            <h2> Name of The product:-${details.type}</h2>
+
             <p>Description:-  ${details.Description}</p></div>
         `;
   } else {
