@@ -2,7 +2,6 @@ import { dummy_Data } from "./data.js";
 document.addEventListener("DOMContentLoaded", () => {
   const idSpan = document.getElementById("id");
   const detailsDiv = document.getElementById("details");
-
   // Get the ID from the URL query parameter
   const urlParams = new URLSearchParams(window.location.search);
   const id = parseInt(urlParams.get("id")); // Convert the id to a number
@@ -17,10 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (details) {
     // Populate the details in the detailsDiv
     detailsDiv.innerHTML = `
-            <h2>${details.type}</h2>
-            <img src="${details.Image}" alt="${details.type}" width="300">
-            <p>Available: ${details.Available ? "Yes" : "No"}</p>
-            <p>Description: ${details.Description}</p>
+    <div class="left_image">
+    <img src="${details.Image}" alt="${details.type}" width="300">
+    </div>
+    <div class="right_text">
+            <h2> Name of The prooduct:-${details.type}</h2>
+            <h3>Available:- ${details.Available ? "Yes" : "No"}</h3>
+            <p>Description:-  ${details.Description}</p></div>
         `;
   } else {
     // Handle the case where the ID is not found
