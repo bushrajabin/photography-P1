@@ -152,24 +152,22 @@ body {
 }
 
 /* ----------------CSS FOR NEXT BUTTON----------- */
-#next_image {
-  background-color: var(--third);
-  /* align-items: center; */
-  font-size: 17px;
-  width: 130px;
-  margin: auto;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border-radius: 10px;
-  letter-spacing: 2px;
-  padding: 0px;
-}
-
 #next {
-  text-align: center;
-  margin: 10px;
+text-align: center;
+padding: 5px;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
+#next_image{
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: var(--third);
+  width: 10%;
+  border-radius: 60px;
+}
 #next_image:hover {
   background-color: var(--primary);
   color: var(--third);
@@ -298,6 +296,10 @@ body {
     height: 110px;
     object-fit: cover;
   }
+
+  #next_image{
+    width: 46%;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
@@ -317,6 +319,9 @@ body {
     height: 200px;
     object-fit: cover;
   }
+  #next_image{
+    width: 50%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -328,7 +333,6 @@ body {
   }
   #inner_gallery {
     width: 200px;
-    /* height: 200px; */
   }
   #inner_gallery > img {
     width: 160px;

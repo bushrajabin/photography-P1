@@ -189,6 +189,11 @@ body {
         font-size: 10px;
         letter-spacing: 1px;
     }
+
+    .add_btn{
+        background-color: aqua;
+        width: 40px;
+    }
 }
 
 

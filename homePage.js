@@ -118,8 +118,8 @@ function forImageDiv() {
   // FOR SHOW MORE BUTTON----------
 
   const showMore = document.getElementById("next");
-  console.log(showMore);
-  const next_image = document.createElement("button");
+  const next_image = document.createElement("a");
+  next_image.href='All_Images.html'
   next_image.id = "next_image";
   next_image.innerHTML = `
       <p>ShowMore</p>`;
@@ -157,8 +157,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // // // this function move in second pagee
-function clickForNextPage() {
-  // alert("hi")
-  // window.location.href = url;
-  // window.location.href = "http://127.0.0.1:5501/All_Images.html";
-}
+// function clickForNextPage(url) {
+//   window.location.href = url;
+// }
