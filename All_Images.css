@@ -26,13 +26,13 @@ body {
     top: 0px;
     margin: auto;
     z-index: 100;
+    width: 100vw;
 }
 
 /* logo */
 
 #logo>img{
     width: 100px;
-  
 }
 
 /* -----------------------------------------CSS FOR LINKS-------------------------------------------- */
