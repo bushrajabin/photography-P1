@@ -153,11 +153,10 @@ body {
 
 /* MEDIA QUERY */
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 500px) {
     .gallery2 {
         display: flex;
         flex-direction: row;
-        flex-direction: row-reverse;
         width: 100vw;
         padding: 0px;
     }
@@ -167,13 +166,13 @@ body {
         font-size: 15px;
         text-align: center;
         width: 160px;
-        margin: 4px;
+        /* margin: 4px; */
         display: flex;
         flex-direction: column;
     }
 
     #inner_gallery>img {
-        width: 120px;
+        width: 140px;
         height: 120px;
         object-fit: cover;
     }
@@ -190,9 +189,8 @@ body {
         letter-spacing: 1px;
     }
 
-    .add_btn{
-        background-color: aqua;
-        width: 40px;
+    #inner_gallery > .add_btn{
+        width: 100px;
     }
 }
 
@@ -201,12 +199,12 @@ body {
 @media (min-width:500px) and (max-width:800px) {
     .gallery2 {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         width: 100vw;
     }
 
     #inner_gallery {
-        width: 200px;
+        width: 160px;
         text-align: center;
     }
 
@@ -215,11 +213,14 @@ body {
         height: 150px;
         object-fit: cover;
     }
-}
+    #inner_gallery > .add_btn{
+        width: 100px;
+    }
+} 
 
 
 /* Min-width */
-@media (min-width:800px) {
+ @media (min-width:800px) {
     .gallery2 {
         display: flex;
         flex-direction: row-reverse;
@@ -236,4 +237,4 @@ body {
         height: 200px;
         object-fit: cover;
     }
-}
+} 
