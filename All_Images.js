@@ -101,6 +101,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("load",function(){
 loader.style.display="none";
+document.querySelector(".gallery2").style.display="flex"
+
+
 
 
 })
