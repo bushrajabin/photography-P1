@@ -81,7 +81,7 @@ export const dummy_Data = [
     Available: true,
     Image: "./images/flower10.jpg",
     Description:
-      ". Bougainvillea glabra is sometimes called paper flower because its bracts are thin and papery. The fruit is a narrow five-lobed achene.The actual flower of the plant is small and generally white, but each cluster of three flowers is surrounded by three or six bracts with the bright colours associated with the plant, including pink, magenta, purple, red, orange, white, or yellow",
+      ". Bougainvillea glabra is sometimes called paper flower because its bracts are thin and papery.  the bright colours associated with the plant, including pink, magenta, purple, red, orange, white, or yellow",
   },
   {
     id: 12,
@@ -226,7 +226,7 @@ export const dummy_Data = [
     Available: false,
     Image: "./images/img13.jpg",
     Description:
-      "Canna glauca is a species of the Canna genus, a member of the family Cannaceae. It is commonly known as water canna or Louisiana canna.The species prefers light (sandy), medium (loamy) and heavy (clay) soils and requires well-drained soil. The preferred soil is acid, neutral and basic (alkaline). It cannot grow in the shade and requires moist soi",
+      "Canna glauca is a species of the Canna genus, a member of the family Cannaceae. It is commonly known as water canna or Louisiana canna.The species",
   },
   {
     id: 30,
@@ -332,5 +332,21 @@ export const dummy_Data = [
     Image: "./images/redFlower2.jpg",
     Description:
       "Bougainvillea glabra is an  evergreen, climbing shrub with thick, thorny stems and drooping branches that are glabrous or sparsely hairy.The leaf-like bracts are purple, oblong or elliptical, pointed, 65–90 mm (2+1⁄2–3+1⁄2 in) long and about 50 mm (2 in) wide. They tower over the flowers. These grow individually in pairs or in groups of three on flower stems about 3.5 millimeters long.",
+  },
+  {
+    id: 43,
+    type: "Sky-cloudy",
+    Available: true,
+    Image: "./images/img22.jpg",
+    Description:
+      "A cloudy sky tells you that rain's on the way, while a cloudy pond or a cloudy glass of water isn't translucent — you can't see through it. You can also describe an issue, thought, or memory as cloudy when it's vague or half-remembered or unclear. Cloudy comes from the Old English word cludm mass of rock, and later cloud, based on the way a cloud can resemble a rock or hill.",
+  },
+  {
+    id: 44,
+    type: "Mariegold",
+    Available: true,
+    Image: "./images/img23.jpg",
+    Description:
+      "Marigolds are comprised of tiny florets surrounded by many layers of delicate, ruffled petals and a thick hollow stem with fernlike leaves ",
   },
 ];
