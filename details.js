@@ -1,5 +1,5 @@
 import { dummy_Data } from "./data.js";
-document.addEventListener("DOMContentLoaded", () => {
+function details() {
   const idSpan = document.getElementById("id");
   const detailsDiv = document.getElementById("details");
   // Get the ID from the URL query parameter
@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <div class="right_text">
             <h2> Name of The product:-${details.type}</h2>
-
             <p>Description:-  ${details.Description}</p></div>
         `;
   } else {
     // Handle the case where the ID is not found
     detailsDiv.innerHTML = `<p>Details not found for ID ${id}</p>`;
   }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  details();
 });

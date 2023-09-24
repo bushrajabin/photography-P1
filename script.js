@@ -153,10 +153,4 @@ document.addEventListener("DOMContentLoaded", function () {
   forbodyPart();
   forImageDiv();
   forFooter();
-  // clickForNextPage();
 });
-
-// // // this function move in second pagee
-// function clickForNextPage(url) {
-//   window.location.href = url;
-// }

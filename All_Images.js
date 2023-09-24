@@ -64,7 +64,7 @@ function forImageData(){
     const only_Type = element["type"];
     const only_Id = element["id"];
 
-    const inner_gallery = document.createElement("div");
+    var inner_gallery = document.createElement("div");
     inner_gallery.id = "inner_gallery";
 
     // Add an event listener to open the details page with the clicked ID
@@ -92,4 +92,15 @@ function forImageData(){
 window.addEventListener("DOMContentLoaded", function () {
   generateNav();
   forImageData()
+
 });
+
+
+ var loader=document.getElementById("preloader");
+
+
+window.addEventListener("load",function(){
+loader.style.display="none";
+
+
+})
