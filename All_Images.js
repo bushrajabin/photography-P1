@@ -95,15 +95,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
- var loader=document.getElementById("preloader");
-
-
+var loader=document.getElementById("preloader");
 window.addEventListener("load",function(){
 loader.style.display="none";
 document.querySelector(".gallery2").style.display="flex"
-
-
-
 
 })
